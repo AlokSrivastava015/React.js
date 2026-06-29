@@ -27,8 +27,6 @@ export class AuthService {
             throw error;
         }
     }
-    }
-
 
     async login({email, password}) {
         try {
@@ -56,7 +54,7 @@ export class AuthService {
             console.log("Appwrite serive :: logout :: error", error);
         }
     }
-
+}
 
 const authService = new AuthService();
 
